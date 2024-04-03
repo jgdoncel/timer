@@ -2,6 +2,8 @@
 
 Simple timer for testing.
 
+Try in https://jgdoncel.github.io/timer/
+
 ## Usage
 
 - Click on `title` to change the default value
