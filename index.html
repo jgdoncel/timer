@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div id="container">
+
+    <div id="title"><span id="title-span">Your title</span><input type="text" id="title-input"></div>
+    <div id="subtitle"><span id="subtitle-span">Your subtitle</span><input type="text" id="subtitle-input" value=""></div>
+
+    <div id="timer">00:00:00</div>
+ 
+    <div id="setter">
+        <input type="text" id="hours" placeholder="hh">
+        <input type="text" id="minutes" placeholder="mm">
+        <input type="text" id="seconds" placeholder="ss">
+        <button id="btn-timeset">Set</button>
+        <button id="btn-timeset-close"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="controls">
+        <button id="btn-start"><i class="fas fa-play"></i> Start</button>
+        <button id="btn-stop"><i class="fas fa-stop"></i> Stop</button>
+        <button id="btn-reset"><i class="fas fa-sync-alt"></i> Reset</button>
+    </div>
+
+    <div id="set-time">
+        <a href="#" id="btn-set-time">Set Time</a>
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
