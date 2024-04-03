@@ -1,0 +1,118 @@
+body {
+    background-color: #333333;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#title-input {
+    display: none;
+}
+
+#subtitle-input {
+    display: none;
+}
+
+
+#subtitle {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+#timer {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color: #999;
+}
+
+button {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #0079d3;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #f6f7f8;
+    color: black;
+    cursor: pointer;
+}
+
+#title input {
+    width: 30ch;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#subtitle input {
+    width: 30ch;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#setter input {
+    width: 2ch;
+}
+
+#set-time {
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+    font-family: "Reddit Mono", monospace;
+    font-size: 1em;
+}
+
+#set-time a {
+    color: white;
+}
+
+#setter, #controls {
+    text-align: center;
+}
+
+#setter {
+    display: none;
+}
