@@ -123,7 +123,7 @@ window.addEventListener('load', function() {
         if (seconds > 59) seconds = 59;
         time = hours * 3600 + minutes * 60 + seconds;
         timer.innerHTML = formatHms(time);
-        timesetCloseButton.click();
+        timesetCloseClick();
     }
 
     function pad(num) {
