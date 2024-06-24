@@ -83,7 +83,13 @@ window.addEventListener('load', function() {
         interval = setInterval(function() {
             time++;
             timer.innerHTML = formatHms(time);
-        }, 1000);
+        }, 1000);        
+        var titleSpan = document.getElementById('title-span');
+        if (titleSpan.innerHTML == 'Set your title') {
+            titleSpan.style.display = 'none';
+            var subtitleSpan = document.getElementById('subtitle-span');
+            subtitleSpan.style.display = 'none';
+        }
     }
 
     function stopTimer() {
@@ -91,6 +97,10 @@ window.addEventListener('load', function() {
         stopButton.disabled = true;
         timer.style.color = '#999';
         clearInterval(interval);
+        var titleSpan = document.getElementById('title-span');
+        titleSpan.style.display = 'block';
+        var subtitleSpan = document.getElementById('subtitle-span');
+        subtitleSpan.style.display = 'block';
     }
 
     function resetTimer() {
